@@ -63,23 +63,20 @@ void deletevalue(int index=-1)
 {
     if(index=-1)
     {
-        cout << "Delete unsuccessful.\n";
+        cout << "Delete unsuccessful. Value not found.\n";
         return;
     }
     for(int i=index; i < n-1; i++)
     {
         list[i] = list[i+1];
     }
+    cout << "Delete successful.\n";
 }
 
 int main()
 {
     getvalues();
 
-    int alg = 0;
-    while (alg != 1 && alg != 2)
-    {
-        cout << "\n1:\tLinear Search\n2:\tBinary Search\n\n1 or 2: ";
-        cin >> alg;
-    }
+    int index = linearsearch();
+    deletevalue(index);
 }
