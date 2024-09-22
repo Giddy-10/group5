@@ -90,6 +90,7 @@ void replacevalue(int index=-1)
     cin >> x;
 
     list[index] = x;
+    selectionsort();
     cout << "Value successfully replaced.\n";
 }
 
