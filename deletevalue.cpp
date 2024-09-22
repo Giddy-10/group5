@@ -61,7 +61,7 @@ int linearsearch()
 
 void deletevalue(int index=-1)
 {
-    if(index=-1)
+    if(index == -1)
     {
         cout << "Delete unsuccessful. Value not found.\n";
         return;
@@ -79,4 +79,6 @@ int main()
 
     int index = linearsearch();
     deletevalue(index);
+
+    display();
 }
